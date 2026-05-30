@@ -154,7 +154,9 @@ bfind . -name '*.c' -printf '%Wt %p\n'
 bfind . -maxdepth 1 -printf 't=%Wt a=%Wa c=%Wc B=%WB  %f\n'
 ```
 
-The output precision is 9 decimal places (≈ 86.4 µs resolution).
+The output precision is 9 decimal places (≈ 86.4 µs resolution). See
+[`FORMAT-SPEC.md`](https://github.com/Digital-Defiance/brightdate-rust/blob/main/FORMAT-SPEC.md)
+for cross-tool `%W*` rules (`btime -f` uses `%Wt`/`%Ws` for command timing).
 
 ### -daystart
 

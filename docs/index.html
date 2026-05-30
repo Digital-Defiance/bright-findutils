@@ -745,7 +745,11 @@ bfind . -before 9000 -name '*.log' -delete</code></pre>
               BrightDate decimals. <code>t</code> = mtime, <code>a</code> =
               atime, <code>c</code> = ctime, <code>B</code> = birth time. Output
               is plain float — sort with <code>sort -n</code>, diff with
-              <code>awk</code>.
+              <code>awk</code>. Canonical rules (shared with
+              <code>btime -f %Wt/%Ws</code>):
+              <a class="link" href="https://github.com/Digital-Defiance/brightdate-rust/blob/main/FORMAT-SPEC.md"
+                >FORMAT-SPEC.md</a
+              >.
             </p>
             <pre
               style="margin-top: 0.75rem; font-size: 0.78rem"
